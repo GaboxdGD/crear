@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="cssi.css">
+</head>
+<body>
+    <main class="contenedor">
+        <form id="formulario-login" class="formulario-login">
+            <h2>Iniciar Sesión</h2>
+            
+            <div class="grupo-campo">
+                <label for="correo-login">Correo electrónico</label>
+                <input type="email" id="correo-login" name="correo" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="contrasena-login">Contraseña</label>
+                <div class="contenedor-contrasena">
+                    <input type="password" id="contrasena" id="contrasena-login" class="contrasena" name="contrasena" required>
+                    <button type="button" id="mostrar-contrasena" class="ojo" aria-label="Mostrar contraseña">👁️</button>
+                </div>
+            </div>
+
+            <button type="submit" class="boton-enviar">Entrar</button>
+        </form>
+
+        <div class="acciones">
+            <p class="fila-enlace">
+                <a href="re1.html" id="ya-tengo-cuenta">recuperar contraseña</a>
+            </p>
+        </div>
+
+        <div id="mensaje-login"></div>
+    </main>
+    <script src="ap.js"></script>
+</body>
+</html>

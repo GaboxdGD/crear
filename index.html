@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Autenticación</title>
+    <link rel="stylesheet" href="cssi.css">
+</head>
+<body>
+    <main class="contenedor">
+        <form id="formulario-registro" class="formulario-registro">
+            <h2>Crear Cuenta</h2>
+            
+            <div class="grupo-campo">
+                <label for="nombre-completo">Nombre completo</label>
+                <input type="text" id="nombre-completo" name="nombre-completo" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefono">Teléfono móvil</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="contrasena">Contraseña</label>
+                <div class="contenedor-contrasena">
+                    <input type="password" id="contrasena" name="contrasena" required>
+                    <button type="button" id="mostrar-contrasena" class="ojo" aria-label="Mostrar contraseña">👁️</button>
+                </div>
+                <small class="ayuda-contrasena">8+ caracteres, mayúscula, minúscula, número y símbolo</small>
+            </div>
+             <p class="link-row">
+                <a href="re.html" id="recover-password">Recuperar contraseña</a>
+            </p>
+
+            <button type="submit" class="boton-enviar">Registrar</button>
+        </form>
+    </main>
+    <script src="ap.js"></script>
+</body>
+</html>

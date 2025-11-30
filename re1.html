@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="cssi.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Recuperar Contraseña</h2>
+        <form id="formulario-recuperar">
+            <div class="grupo-campo">
+                <label for="correo-recuperar">Correo electrónico</label>
+                <input type="email" id="correo-recuperar" name="correo" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="nueva-contrasena">Nueva contraseña</label>
+                <div class="contenedor-contrasena">
+                    <input type="password"class="contrasena" id="nueva-contrasena" name="contrasena" required>
+                    <button type="button" id="mostrar-nueva-contrasena" class="ojo" aria-label="Mostrar contraseña">👁️</button>
+                </div>
+                <small class="ayuda-contrasena">8+ caracteres, mayúscula, minúscula, número y símbolo</small>
+            </div>
+
+            <button type="submit" class="boton-enviar">Actualizar contraseña</button>
+        </form>
+
+        <div id="mensaje-recuperacion"></div>
+        <p class="fila-enlace">
+            <a href="re.html" class="volver-login">Volver al inicio de sesión</a>
+        </p>
+    </div>
+    <script src="ap.js"></script>
+</body>
+</html>
